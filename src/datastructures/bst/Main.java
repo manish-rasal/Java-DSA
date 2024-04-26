@@ -3,12 +3,17 @@ package datastructures.bst;
 public class Main {
     public static void main(String[] args) {
         BinarySearchTree myBST = new BinarySearchTree();
-        myBST.insert(2);
-        myBST.insert(1);
-        myBST.insert(3);
+        myBST.insert(47);
+        myBST.insert(21);
+        myBST.insert(76);
+        myBST.insert(18);
+        myBST.insert(27);
+        myBST.insert(52);
+        myBST.insert(82);
 
-        myBST.deleteNode(2);
-        System.out.println(myBST.root.left.value);
-        System.out.println(myBST.root.right);
+        System.out.println(myBST.BFS());
+        System.out.println(myBST.DFSPreOrder());
+        System.out.println(myBST.DFSPostOrder());
+        System.out.println(myBST.DFSInOrder());
     }
 }
